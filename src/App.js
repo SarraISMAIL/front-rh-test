@@ -1,36 +1,18 @@
+import "./App.css";
+import React from "react";
+import { Switch } from "react-router-dom";
 
-import './App.css';
-import React from 'react';
-import {Switch} from 'react-router-dom';
+import { BrowserRouter as Router, Route } from "react-router-dom";
 
-import {BrowserRouter as Router, Route} from 'react-router-dom';
-
-import home from './pages/home';
-import header from './components/header';
-
-
-
-
-
-
+import Home from "./pages/home";
 
 function App() {
   return (
-    
-
     <Router>
-   
       <Switch>
-        <Route path="/" component={home} exact />
-       
+        <Route path="/" component={Home} exact />
       </Switch>
-    
-  
-</Router>
-
-
-
-  
+    </Router>
   );
 }
 
